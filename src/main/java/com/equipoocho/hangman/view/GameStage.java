@@ -1,2 +1,4 @@
-package com.equipoocho.hangman.view;public class GameStage {
+package com.equipoocho.hangman.view;
+
+public class GameStage {
 }

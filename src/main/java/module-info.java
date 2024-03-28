@@ -1,4 +1,4 @@
-module com.equipo8.hangman {
+module com.equipoocho.hangman {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,8 @@ module com.equipo8.hangman {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.equipo8.hangman to javafx.fxml;
-    exports com.equipo8.hangman;
+    opens com.equipoocho.hangman to javafx.fxml;
+    opens com.equipoocho.hangman.controller to javafx.fxml;
+
+    exports com.equipoocho.hangman;
 }
