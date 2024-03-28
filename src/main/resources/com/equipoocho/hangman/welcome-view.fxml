@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.WelcomeController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="JUEGO DEL AHORCADO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="welcomeInstructions" mnemonicParsing="false" onAction="#onClickButtonInstructions" style="-fx-background-color: #8C1C25; -fx-border-radius: 10; -fx-border-color: white;" text="?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <Button fx:id="welcomePlay" alignment="CENTER" mnemonicParsing="false" onAction="#onClickButtonPlay" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;" text="JUGAR" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </bottom>
+   <right>
+      <ButtonBar prefHeight="269.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ButtonBar>
+   </right>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="534.0" translateX="60.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField alignment="CENTER" layoutX="74.0" layoutY="122.0" prefHeight="27.0" prefWidth="358.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
+            <Button fx:id="welcomeShowKeyword" layoutX="432.0" layoutY="122.0" mnemonicParsing="false" onAction="#onClickButtonShowKeyword" prefHeight="30.0" prefWidth="31.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
