@@ -5,13 +5,14 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.WelcomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.WelcomeController">
    <top>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
          <children>
@@ -48,8 +49,9 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="534.0" translateX="60.0" BorderPane.alignment="CENTER">
          <children>
-            <PasswordField alignment="CENTER" layoutX="74.0" layoutY="122.0" prefHeight="27.0" prefWidth="358.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
-            <Button fx:id="welcomeShowKeyword" layoutX="432.0" layoutY="122.0" mnemonicParsing="false" onAction="#onClickButtonShowKeyword" prefHeight="30.0" prefWidth="31.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;" />
+            <TextField fx:id="keywordVisible" alignment="CENTER" layoutX="74.0" layoutY="120.0" prefHeight="15.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-border-color: white; -fx-border-width: 2; -fx-text-fill: white;" />
+            <PasswordField fx:id="keywordHidden" alignment="CENTER" layoutX="74.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
+            <ToggleButton fx:id="welcomeShowWord" layoutX="425.0" layoutY="120.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;" />
          </children>
       </AnchorPane>
    </center>
