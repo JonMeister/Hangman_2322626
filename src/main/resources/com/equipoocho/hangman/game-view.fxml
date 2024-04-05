@@ -3,13 +3,14 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainGameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#keyListener" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.GameController">
+<BorderPane fx:id="mainGameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.GameController">
    <top>
       <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
          <children>
@@ -30,6 +31,11 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#onClickButtonRestart" style="-fx-background-color: #8C1C25; -fx-border-color: white; -fx-border-radius: 10;" text="JUEGO NUEVO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </top>
@@ -37,7 +43,22 @@
       <AnchorPane fx:id="gameWordPane" prefHeight="97.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </bottom>
    <right>
-      <AnchorPane prefHeight="252.0" prefWidth="369.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="252.0" prefWidth="369.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="letterTextfield" layoutX="106.0" layoutY="126.0" onKeyPressed="#onKeyPressedVerify" />
+            <Button fx:id="verifyButton" layoutX="155.0" layoutY="154.0" mnemonicParsing="false" onAction="#onClickButtonVerifyLetter" text="Verificar" />
+            <Label fx:id="hintsLabel" layoutX="133.0" layoutY="37.0" prefHeight="27.0" prefWidth="126.0" text="Pistas: 0/3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="missesLabel" layoutX="133.0" layoutY="73.0" prefHeight="27.0" prefWidth="110.0" text="Errores: 0/6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </right>
    <left>
       <AnchorPane fx:id="hangmanAnchorPane" prefHeight="252.0" prefWidth="338.0" BorderPane.alignment="CENTER">
