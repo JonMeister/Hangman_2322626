@@ -1,3 +1,15 @@
+/*
+Archivo: Main.java
+Autores:
+- Jonathan Aristizabal (202322626)
+
+Correos:
+- jonathan.aristizabal@correounivalle.edu.co
+
+Fecha creación: 2024-03-28
+Fecha última modificación: 2024-04-05
+*/
+
 package com.equipoocho.hangman;
 
 import javafx.application.Application;

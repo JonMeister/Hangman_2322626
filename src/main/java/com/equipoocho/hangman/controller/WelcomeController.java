@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 //import com.equipoocho.hangman.view.Alert.AlertBox;
 import com.equipoocho.hangman.view.GameStage;
 import com.equipoocho.hangman.view.WelcomeStage;
+import com.equipoocho.hangman.controller.GameController;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
 
@@ -32,20 +33,23 @@ public class WelcomeController {
 
     @FXML
     private TextField keywordVisible;
+    private Words words;
 
     @FXML
     void onClickButtonInstructions(ActionEvent event) {
-
+        new Alertbox().showInfo("Hangman","Instrucciones:","Ingrese una palabra para empezar a jugar al ahorcado, puedes\nequivocarte hasta 6 veces antes de que el stickman sea\nahorcado.");
     }
 
     @FXML
-    void onClickButtonPlay(ActionEvent event) {
-        String keyword= keywordHidden.getText();
-        Words words= new Words(keyword);
-        if(!words.checkWord(keyword)){
-        new Alertbox().showError("Hangman","Error en palabra clave","Por favor introduzca una palabra sin caracteres especiales y que contenga entre 4 y 12 letras.");
+    void onClickButtonPlay(ActionEvent event) throws IOException {
+        String keyword = keywordHidden.getText();
+         this.words = new Words(keyword);
+        if (!words.checkWord(keyword)) {
+            new Alertbox().showError("Hangman", "Error en palabra clave", "Por favor introduzca una palabra sin caracteres especiales y que contenga entre 4 y 15 letras.");
+        } else {
+            GameStage.getInstance(words);
+            WelcomeStage.deleteInstance();
         }
-
     }
 
     @FXML
@@ -53,7 +57,6 @@ public class WelcomeController {
         keywordVisible.setText(keywordHidden.getText());
         keywordHidden.setVisible(false);
         keywordVisible.setVisible(true);
-
     }
     @FXML
     void onMouseReleased(MouseEvent event){
@@ -61,6 +64,4 @@ public class WelcomeController {
         keywordHidden.setVisible(true);
         keywordVisible.setVisible(false);
     }
-
-
 }
