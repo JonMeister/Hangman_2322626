@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -37,6 +40,9 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </bottom>
    <right>
@@ -51,7 +57,17 @@
          <children>
             <TextField fx:id="keywordVisible" alignment="CENTER" layoutX="74.0" layoutY="120.0" prefHeight="15.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-border-color: white; -fx-border-width: 2; -fx-text-fill: white;" />
             <PasswordField fx:id="keywordHidden" alignment="CENTER" layoutX="74.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
-            <ToggleButton fx:id="welcomeShowWord" layoutX="425.0" layoutY="120.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;" />
+            <ToggleButton fx:id="welcomeShowWord" layoutX="425.0" layoutY="120.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/eyes.png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
          </children>
       </AnchorPane>
    </center>

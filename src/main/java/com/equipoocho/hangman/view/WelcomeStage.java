@@ -15,7 +15,6 @@ public class WelcomeStage extends Stage {
         Parent root = loader.load();
         setTitle("Hangman");
         Scene scene = new Scene(root);
-
         getIcons().add(new Image(
                 String.valueOf(getClass().getResource("/com/equipoocho/hangman/images/hangman.png"))));
         setScene(scene);

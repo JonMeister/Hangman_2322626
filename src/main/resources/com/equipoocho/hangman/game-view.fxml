@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainGameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#keyListener" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.GameController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="159.0" layoutY="8.0" text="JUEGO DEL AHORCADO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="gameHint" layoutX="509.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickButtonHint" style="-fx-background-color: #8C1C25; -fx-border-color: white; -fx-border-radius: 10;" text="PISTA" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/idea.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane fx:id="gameWordPane" prefHeight="97.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="252.0" prefWidth="369.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <AnchorPane fx:id="hangmanAnchorPane" prefHeight="252.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="228.0" fitWidth="228.0" layoutX="64.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/hangman1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
