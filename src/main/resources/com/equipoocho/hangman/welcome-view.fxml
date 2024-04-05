@@ -15,9 +15,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.WelcomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.WelcomeController">
    <top>
-      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="611.0" spacing="5.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" text="JUEGO DEL AHORCADO" textFill="WHITE">
                <font>
@@ -55,9 +55,9 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="534.0" translateX="60.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="keywordVisible" alignment="CENTER" layoutX="74.0" layoutY="120.0" prefHeight="15.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-border-color: white; -fx-border-width: 2; -fx-text-fill: white;" />
-            <PasswordField fx:id="keywordHidden" alignment="CENTER" layoutX="74.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
-            <ToggleButton fx:id="welcomeShowWord" layoutX="425.0" layoutY="120.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;">
+            <TextField fx:id="keywordVisible" alignment="CENTER" layoutX="74.0" layoutY="150.0" prefHeight="15.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-border-color: white; -fx-border-width: 2; -fx-text-fill: white;" />
+            <PasswordField fx:id="keywordHidden" alignment="CENTER" layoutX="74.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D9414E; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 2;" />
+            <ToggleButton fx:id="welcomeShowWord" layoutX="425.0" layoutY="150.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #BF2C2C; -fx-border-color: white; -fx-border-width: 2;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -68,6 +68,11 @@
                      </image>
                   </ImageView>
                </graphic></ToggleButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="78.0" prefHeight="35.0" prefWidth="389.0" text="INGRESE LA PALABRA SECRETA">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </center>

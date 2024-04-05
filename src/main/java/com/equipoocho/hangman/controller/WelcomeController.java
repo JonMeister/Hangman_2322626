@@ -45,7 +45,7 @@ public class WelcomeController {
         String keyword = keywordHidden.getText();
          this.words = new Words(keyword);
         if (!words.checkWord(keyword)) {
-            new Alertbox().showError("Hangman", "Error en palabra clave", "Por favor introduzca una palabra sin caracteres especiales y que contenga entre 4 y 12 letras.");
+            new Alertbox().showError("Hangman", "Error en palabra clave", "Por favor introduzca una palabra sin caracteres especiales y que contenga entre 4 y 15 letras.");
         } else {
             GameStage.getInstance(words);
             WelcomeStage.deleteInstance();

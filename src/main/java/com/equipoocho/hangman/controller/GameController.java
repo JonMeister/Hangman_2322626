@@ -1,6 +1,7 @@
 package com.equipoocho.hangman.controller;
 import com.equipoocho.hangman.model.HangmanImages;
 import com.equipoocho.hangman.model.Words;
+import com.equipoocho.hangman.view.alert.Alertbox;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -43,9 +44,9 @@ public class GameController {
     @FXML
     private AnchorPane gameWordPane;
 
-
+    //Botón que nos permitirá revelar SOLO una letra de la palabra clave por pista. Así la letra se repita, no revela más de una letra.
     @FXML
-    void onClickButtonHint(ActionEvent event) { //Botón que nos permitirá revelar una letra de la palabra clave.
+    void onClickButtonHint(ActionEvent event) {
         Random rand = new Random();
         while (true) {
             int randNumber = rand.nextInt(gameWord.length());
@@ -54,19 +55,12 @@ public class GameController {
                 letter=String.valueOf(gameWord.charAt(randNumber));
                 textField.setText(letter);
                 this.wordProgress.insert(randNumber, letter.toCharArray(), 0, 1);
-
-                //this.wordProgress.insert(randNumber, gameWord.charAt(randNumber));
-                //this.wordProgress.append(((TextField)(letterGrid.getChildren().get(randNumber))).getCharacters());
-               /* for (int j = 0; j < gameWord.length();j++) {
-                    this.wordProgress.append(((TextField)(letterGrid.getChildren().get(j))).getCharacters());
-                }*/
                 this.hintsGiven++;
                 break;
             }
-
         }
-//        if(this.hintsGiven>2){gameHint.setDisable(true);mainGameScene.requestFocus();}
-        if(wordProgress.toString().replace(" ","").contains(this.gameWord)){
+        if(this.hintsGiven>2){gameHint.setDisable(true);mainGameScene.requestFocus();}//Condicional que permite usar hasta 3 pistas.
+        if(wordProgress.toString().replace(" ","").contains(this.gameWord)){// Condicional para terminar el juego, por si la palabra es completada con las pistas.
             gameHint.setDisable(true);
             listen=false;
             mainGameScene.requestFocus();
@@ -74,8 +68,10 @@ public class GameController {
         }
         System.out.println(wordProgress);
     }
+    //Escucha de teclado para adivinar la palabra secreta.
     @FXML
     void keyListener(KeyEvent event) {
+        wordProgress=new StringBuilder();
         if(!listen){return;}
         String letter = event.getCharacter().toUpperCase();
         hits=0;
@@ -84,10 +80,9 @@ public class GameController {
                     TextField textField = (TextField) letterGrid.getChildren().get(j);
                     textField.setText(letter);
                     hits++;
-                    this.wordProgress.insert(j, letter.toCharArray(), 0, 1);
 
                 }
-                //this.wordProgress.append(((TextField)(letterGrid.getChildren().get(j))).getCharacters());
+                this.wordProgress.append(((TextField)(letterGrid.getChildren().get(j))).getCharacters());
 
             }
             if(hits==0){
@@ -104,10 +99,17 @@ public class GameController {
                 misses++;
                 System.out.println(misses);
             }
-        if (misses>=6 || wordProgress.toString().replace(" ","").contains(this.gameWord)) {
+        if (misses>=6) {
             listen=false;
             gameHint.setDisable(true);
             mainGameScene.requestFocus();
+            new Alertbox().showInfo("Hangman","Has perdido","El juego ha terminado, la palabra secreta era: "+gameWord);
+        }
+        if (wordProgress.toString().replace(" ","").contains(this.gameWord)) {
+            listen=false;
+            gameHint.setDisable(true);
+            mainGameScene.requestFocus();
+            new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
         }
         System.out.println(this.wordProgress);
 

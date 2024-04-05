@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee00ca3-3afe-4bbb-9145-56090fde632c" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/HangmanImages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/game-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/hangman7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/images/idea.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/Words.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/GameStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/WelcomeStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/WelcomeStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/IAlertBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/IAlertBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/game-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/welcome-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +97,7 @@
       <updated>1711558660656</updated>
       <workItem from="1711558661738" duration="920000" />
       <workItem from="1711608161310" duration="3494000" />
-      <workItem from="1711643174004" duration="66680000" />
+      <workItem from="1711643174004" duration="73650000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -137,12 +123,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java</url>
-          <line>115</line>
+          <line>117</line>
           <properties class="com.equipoocho.hangman.controller.GameController" method="showGrid">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java</url>
+          <line>72</line>
+          <properties class="com.equipoocho.hangman.controller.GameController" method="keyListener">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

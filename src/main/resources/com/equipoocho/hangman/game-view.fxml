@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainGameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#keyListener" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.GameController">
+<BorderPane fx:id="mainGameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#keyListener" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #BFA099;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.equipoocho.hangman.controller.GameController">
    <top>
       <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #8C1C25;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="159.0" layoutY="8.0" text="JUEGO DEL AHORCADO" textFill="WHITE">
+            <Label layoutX="215.0" layoutY="7.0" text="JUEGO DEL AHORCADO" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="gameHint" layoutX="509.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickButtonHint" style="-fx-background-color: #8C1C25; -fx-border-color: white; -fx-border-radius: 10;" text="PISTA" textFill="WHITE">
+            <Button fx:id="gameHint" layoutX="612.0" layoutY="9.0" mnemonicParsing="false" onAction="#onClickButtonHint" style="-fx-background-color: #8C1C25 #8C1C25; -fx-border-color: white; -fx-border-radius: 10;" text="PISTA" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>

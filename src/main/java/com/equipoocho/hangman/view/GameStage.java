@@ -22,7 +22,6 @@ public class GameStage extends Stage {
         gameController.setWords(words);// Para pasar la palabra del WelcomeController al GameController.
         gameController.showGrid(); // Llamar al método que inserta una grilla en función de la longitud de la palabra clave.
 
-
         setTitle("Hangman");
         Scene scene = new Scene(root);
         getIcons().add(new Image(
