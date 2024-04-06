@@ -7,7 +7,7 @@ public class HangmanImages {
 
     private ImageView hangmanimage;
     private static int contador=1;
-
+    //Función para configuar la imagen del stickman y que suma al contador cada que se llama.
     public HangmanImages (){
         String PATH="/com/equipoocho/hangman/images/";
         contador++;
@@ -18,7 +18,7 @@ public class HangmanImages {
         this.hangmanimage.setFitHeight(228);
         this.hangmanimage.setFitWidth(228);
     }
-
+    //Función que devuelve la imagen.
     public ImageView getHangmanimage() {
         return hangmanimage;
     }
