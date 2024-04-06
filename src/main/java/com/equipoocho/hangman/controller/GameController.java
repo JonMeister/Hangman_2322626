@@ -74,6 +74,7 @@ public class GameController {
             gameHint.setDisable(true);
             verifyButton.setDisable(true);
             mainGameScene.requestFocus();
+            new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
             listen=false;
         }
         hintsLabel.setText("Pistas: "+hintsGiven+"/3");//Contador de pistas.
