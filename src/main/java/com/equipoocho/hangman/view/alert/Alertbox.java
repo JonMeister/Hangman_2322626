@@ -1,8 +1,7 @@
 package com.equipoocho.hangman.view.alert;
+
 import javafx.scene.control.Alert;
-import javafx.scene.control.DialogPane;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class Alertbox implements IAlertBox{

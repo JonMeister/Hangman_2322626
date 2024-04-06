@@ -12,12 +12,9 @@ Fecha última modificación: 2024-04-05
 
 package com.equipoocho.hangman;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 import com.equipoocho.hangman.view.WelcomeStage;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
