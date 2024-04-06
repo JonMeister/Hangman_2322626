@@ -82,7 +82,6 @@ public class GameController {
     //Botón para verificar que se ingrese una letra del alfabeto y que verifica si la letra pertenece a la palabra..
     @FXML
     void onClickButtonVerifyLetter(ActionEvent event) {
-    if(!listen){return;}
 
     String letter=letterTextfield.getText().toUpperCase();
     // Expresión regular para verificar que no tenga caracteres especiales y sea solo un carácter.
