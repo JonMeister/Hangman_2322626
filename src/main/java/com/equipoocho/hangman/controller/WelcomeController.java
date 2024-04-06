@@ -1,17 +1,14 @@
 package com.equipoocho.hangman.controller;
 
 import com.equipoocho.hangman.model.Words;
+import com.equipoocho.hangman.view.GameStage;
+import com.equipoocho.hangman.view.WelcomeStage;
 import com.equipoocho.hangman.view.alert.Alertbox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-//import com.equipoocho.hangman.model.Player;
-//import com.equipoocho.hangman.view.Alert.AlertBox;
-import com.equipoocho.hangman.view.GameStage;
-import com.equipoocho.hangman.view.WelcomeStage;
-import com.equipoocho.hangman.controller.GameController;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;

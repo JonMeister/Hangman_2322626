@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5ee00ca3-3afe-4bbb-9145-56090fde632c" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/HangmanImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/HangmanImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/Words.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/equipoocho/hangman/welcome-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "jav2",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jonat/OneDrive - correounivalle.edu.co/Documents/Universidad/3. SEMESTRE III_IT/POE/JAVA/CRAPSGAME 16_03/craps-game-sesion-4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jav2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonat/OneDrive - correounivalle.edu.co/Documents/Universidad/3. SEMESTRE III_IT/POE/JAVA/CRAPSGAME 16_03/craps-game-sesion-4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jonat\OneDrive - correounivalle.edu.co\Documents\Universidad\3. SEMESTRE III_IT\POE\Miniproyecto #1\Hangman\hangman\src\main\resources" />
@@ -97,7 +95,9 @@
       <updated>1711558660656</updated>
       <workItem from="1711558661738" duration="920000" />
       <workItem from="1711608161310" duration="3494000" />
-      <workItem from="1711643174004" duration="83748000" />
+      <workItem from="1711643174004" duration="85948000" />
+      <workItem from="1712365885430" duration="65000" />
+      <workItem from="1712365969208" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -123,7 +123,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java</url>
-          <line>215</line>
+          <line>209</line>
           <properties class="com.equipoocho.hangman.controller.GameController" method="showGrid">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

@@ -1,4 +1,5 @@
 package com.equipoocho.hangman.controller;
+
 import com.equipoocho.hangman.model.HangmanImages;
 import com.equipoocho.hangman.model.Words;
 import com.equipoocho.hangman.view.GameStage;
@@ -6,26 +7,22 @@ import com.equipoocho.hangman.view.WelcomeStage;
 import com.equipoocho.hangman.view.alert.Alertbox;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-
-import javafx.geometry.HPos;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 import java.io.IOException;
 import java.util.Random;
-
-import static javafx.scene.input.KeyEvent.KEY_TYPED;
 
 public class GameController {
 
@@ -78,9 +75,7 @@ public class GameController {
             verifyButton.setDisable(true);
             mainGameScene.requestFocus();
             listen=false;
-            System.out.println("se acabó");
         }
-        System.out.println(wordProgress);
         hintsLabel.setText("Pistas: "+hintsGiven+"/3");//Contador de pistas.
     }
     //Botón para verificar que se ingrese una letra del alfabeto y que verifica si la letra pertenece a la palabra..
@@ -119,7 +114,6 @@ public class GameController {
 
             hangmanAnchorPane.getChildren().addAll(hangmanView);
             misses++;
-            System.out.println(misses);
         }
         //Condicional que detiene el juego cuando se alcanzan los 6 errores y lanza AlertBox.
         if (misses>=6) {
@@ -137,7 +131,6 @@ public class GameController {
             mainGameScene.requestFocus();
             new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
         }
-        System.out.println(this.wordProgress);
         //Contador de errores
         missesLabel.setText("Errores: "+misses+"/6");
 
@@ -183,7 +176,6 @@ public class GameController {
 
                     hangmanAnchorPane.getChildren().addAll(hangmanView);
                     misses++;
-                    System.out.println(misses);
                 }
                 //Condicional que detiene el juego cuando se alcanzan los 6 errores y lanza AlertBox.
                 if (misses>=6) {
@@ -201,7 +193,6 @@ public class GameController {
                     mainGameScene.requestFocus();
                     new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
                 }
-                System.out.println(this.wordProgress);
                 //Contador de errores
                 missesLabel.setText("Errores: "+misses+"/6");
 
