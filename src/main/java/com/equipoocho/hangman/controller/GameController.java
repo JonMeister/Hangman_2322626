@@ -114,7 +114,10 @@ public class GameController {
 
             hangmanAnchorPane.getChildren().addAll(hangmanView);
             misses++;
+            //Contador de errores
+            missesLabel.setText("Errores: "+misses+"/6");
         }
+
         //Condicional que detiene el juego cuando se alcanzan los 6 errores y lanza AlertBox.
         if (misses>=6) {
             listen=false;
@@ -131,8 +134,7 @@ public class GameController {
             mainGameScene.requestFocus();
             new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
         }
-        //Contador de errores
-        missesLabel.setText("Errores: "+misses+"/6");
+
 
     }
     // Si no se ingresa un carácter válido se lanza un AlertBox
