@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ee00ca3-3afe-4bbb-9145-56090fde632c" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/HangmanImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/model/HangmanImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/GameStage.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ee00ca3-3afe-4bbb-9145-56090fde632c" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +92,7 @@
       <workItem from="1711643174004" duration="85948000" />
       <workItem from="1712365885430" duration="65000" />
       <workItem from="1712365969208" duration="2627000" />
-      <workItem from="1712377772836" duration="1424000" />
+      <workItem from="1712377772836" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
