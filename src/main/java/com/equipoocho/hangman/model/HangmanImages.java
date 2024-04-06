@@ -6,11 +6,10 @@ import javafx.scene.image.ImageView;
 public class HangmanImages {
 
     private ImageView hangmanimage;
-    private static int contador=1;
+    private static int contador=2;
     //Función para configuar la imagen del stickman y que suma al contador cada que se llama.
     public HangmanImages (){
         String PATH="/com/equipoocho/hangman/images/";
-        contador++;
         this.hangmanimage=
                 new ImageView(
                         new Image(String.valueOf(getClass().getResource(PATH+"hangman"+contador+".png")))
@@ -20,6 +19,8 @@ public class HangmanImages {
     }
     //Función que devuelve la imagen.
     public ImageView getHangmanimage() {
+        contador++;
         return hangmanimage;
     }
+    public void resetCounter(){contador=2;}
 }

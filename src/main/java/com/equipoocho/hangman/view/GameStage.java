@@ -2,6 +2,7 @@ package com.equipoocho.hangman.view;
 
 import com.equipoocho.hangman.controller.GameController;
 import com.equipoocho.hangman.model.Words;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,7 +22,7 @@ public class GameStage extends Stage {
         GameController gameController = loader.getController();
         gameController.setWords(words);// Para pasar la palabra del WelcomeController al GameController.
         gameController.showGrid(); // Llamar al método que inserta una grilla en función de la longitud de la palabra clave.
-
+        Platform.runLater(gameController::initialize);// Hacer focus al textfield.
         setTitle("Hangman");
         Scene scene = new Scene(root);
         getIcons().add(new Image(

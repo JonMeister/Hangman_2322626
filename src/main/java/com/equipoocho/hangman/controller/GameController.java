@@ -178,6 +178,8 @@ public class GameController {
 
                     hangmanAnchorPane.getChildren().addAll(hangmanView);
                     misses++;
+                    //Contador de errores
+                    missesLabel.setText("Errores: "+misses+"/6");
                 }
                 //Condicional que detiene el juego cuando se alcanzan los 6 errores y lanza AlertBox.
                 if (misses>=6) {
@@ -195,9 +197,6 @@ public class GameController {
                     mainGameScene.requestFocus();
                     new Alertbox().showInfo("Hangman","Has ganado","Felicitaciones, has adivinado la palabra secreta.");
                 }
-                //Contador de errores
-                missesLabel.setText("Errores: "+misses+"/6");
-
             }
             // Si no se ingresa un carácter válido se lanza un AlertBox
             else{new Alertbox().showError("Hangman","Error en carácter ingresado","Por favor ingrese UNA letra del abecedario, sin tildes");}
@@ -247,8 +246,13 @@ public class GameController {
     //Botón para borrar la instancia de GameStage y volver a una instancia del WelcomeStage
     @FXML
     void onClickButtonRestart(ActionEvent event) throws IOException {
+        hangmanImages.resetCounter();
         GameStage.deleteInstance();
         WelcomeStage.getInstance();
+    }
+    //Función para hacer focus al textfield
+    public void initialize() {
+        letterTextfield.requestFocus();
     }
 }
 
