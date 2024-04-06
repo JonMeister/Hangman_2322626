@@ -14,6 +14,7 @@ package com.equipoocho.hangman;
 
 import com.equipoocho.hangman.view.WelcomeStage;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 import java.io.IOException;
