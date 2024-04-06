@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ee00ca3-3afe-4bbb-9145-56090fde632c" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/view/alert/Alertbox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,7 @@
       <workItem from="1711608161310" duration="3494000" />
       <workItem from="1711643174004" duration="85948000" />
       <workItem from="1712365885430" duration="65000" />
-      <workItem from="1712365969208" duration="553000" />
+      <workItem from="1712365969208" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -123,7 +120,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/equipoocho/hangman/controller/GameController.java</url>
-          <line>209</line>
+          <line>208</line>
           <properties class="com.equipoocho.hangman.controller.GameController" method="showGrid">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
